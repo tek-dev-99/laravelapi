@@ -21,6 +21,7 @@ class UserController extends Controller
             'password'=>'required|min:6|max:12',
             'confirm_password'=>'required|same:password',
         ]);
+        //dd name
 
         $user = new User;
         $user->name=$request['name'];
